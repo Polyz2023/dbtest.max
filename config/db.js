@@ -1,6 +1,6 @@
 const { MongoClient } = require('mongodb');
 
-const URL = 'mongodb://localhost:27017/dbtesto'
+const URL = 'mongodb+srv://nodeprogramer:F4by5!f5RU7YJ25@cluster0.odjfrd7.mongodb.net/sample_mflix?retryWrites=true&w=majority&appName=Cluster0'
 
 let dbConnection
 
