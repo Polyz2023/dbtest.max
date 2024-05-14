@@ -9,7 +9,11 @@ const URL = 'mongodb+srv://nodeprogramer:F4by5!f5RU7YJ25@cluster0.odjfrd7.mongod
 let dbConnection;
 
 // Подключение к базе данных
-MongoClient.connect(URL)
+MongoClient.connect(process.env.URL,  {
+        useNewUrlParser: true,
+        useUnifiedTopology: true,
+
+    })
     .then((client) => {
         console.log('Connected to MongoDB');
         dbConnection = client.db();
